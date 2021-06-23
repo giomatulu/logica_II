@@ -1,0 +1,90 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'green';
+    pincel.fillRect(0, 0, 600, 400);
+
+	pincel.fillStyle = 'yellow';
+	pincel.beginPath();
+	pincel.moveTo(300, 30);
+	pincel.lineTo(30, 200);
+	pincel.lineTo(300, 370);
+	pincel.lineTo(570, 200);
+	pincel.fill();
+
+	pincel.fillStyle = "darkblue";
+	pincel.beginPath();
+	pincel.arc(300, 200, 100, 0, 2* 3.14);
+	pincel.fill();
+	
+	pincel.fillStyle = 'white';
+	pincel.beginPath();
+	pincel.moveTo(200, 195);
+	pincel.lineTo(400, 195);
+	pincel.lineTo(400, 210);
+	pincel.lineTo(200, 210);
+	pincel.lineTo(200, 195);
+	pincel.fill();
+
+	pincel.fillStyle = 'green'
+	pincel.beginPath();
+	pincel.font = '10px Arial';
+	pincel.fillText('ORDEM E PROGRESSO', 245, 205);
+	pincel.fill();
+
+//função para desenha estrela
+	function desenhaEstrela(x, y){
+		pincel.beginPath();
+		pincel.fillStyle = 'white';
+		pincel.moveTo(x, y-5);
+		pincel.lineTo(x-1, y-1);
+		pincel.lineTo(x-5, y-1);
+		pincel.lineTo(x-2, y+1);
+		pincel.lineTo(x-3, y+5);
+		pincel.lineTo(x, y+3);
+		pincel.lineTo(x+3, y+5);
+		pincel.lineTo(x+2, y+1);
+		pincel.lineTo(x+5, y-1);
+		pincel.lineTo(x+1, y-1);
+		pincel.fill();
+	}
+
+	//desenhar estrela
+	desenhaEstrela(313, 186);
+	desenhaEstrela(307, 216);
+	desenhaEstrela(214, 221);
+	desenhaEstrela(249, 233);
+	desenhaEstrela(281, 240);
+	desenhaEstrela(288, 248);
+	desenhaEstrela(275, 251);
+	desenhaEstrela(280, 260);
+	desenhaEstrela(283, 290);
+	desenhaEstrela(229, 259);
+	desenhaEstrela(240, 255);
+	desenhaEstrela(256, 258);
+	desenhaEstrela(256, 270);
+	desenhaEstrela(245, 263);
+	desenhaEstrela(293, 261);
+	desenhaEstrela(312, 275);
+	desenhaEstrela(323, 285);
+	desenhaEstrela(327, 275);
+	desenhaEstrela(349, 280);
+	desenhaEstrela(347, 270);
+	desenhaEstrela(342, 260);
+	desenhaEstrela(355, 258);
+	desenhaEstrela(365, 253);
+	desenhaEstrela(375, 245);
+	desenhaEstrela(370, 233);
+	desenhaEstrela(390, 228);
+	desenhaEstrela(222, 249);
+
+
+
+
+
+
+</script>
